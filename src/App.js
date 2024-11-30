@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import ForgotPassword from "./components/ForgotPassword";
+import "./App.css";
 
 function App() {
+  const [page, setPage] = useState("login"); // Manages current page
+
+  const renderPage = () => {
+    if (page === "login") {
+      return <Login onSwitchToRegister={() => setPage("register")} onForgotPassword={() => setPage("forgotPassword")} />;
+    } else if (page === "register") {
+      return <Register onSwitchToLogin={() => setPage("login")} />;
+    } else if (page === "forgotPassword") {
+      return <ForgotPassword onSwitchToLogin={() => setPage("login")} />;
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header style={{ backgroundColor: "#3137b5", padding: "20px", color: "white", textAlign: "center" }}>
+        <h1>Expense Management System</h1>
       </header>
+      {renderPage()}
     </div>
   );
 }

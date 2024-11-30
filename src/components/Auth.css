@@ -1,0 +1,115 @@
+/* Container styling */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Tabs for Login and Signup */
+  .auth-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .auth-tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    outline: none;
+  }
+  
+  .auth-tabs .active-tab {
+    background-color: #3137b5;
+    color: #fff;
+  }
+  
+  /* Title */
+  .auth-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form input styling */
+  .auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password a {
+    color: #3137b5;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Submit button */
+  .auth-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #3137b5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .auth-submit:hover {
+    background-color: #3137b5;
+  }
+  
+  .auth-submit:active {
+    background-color: #3137b5; /* No change, same color on click */
+  }
+  
+  /* Links */
+  .auth-link {
+    color: #3137b5;
+    cursor: pointer;
+  }
+  
+  .auth-link:hover {
+    text-decoration: underline;
+  }
+  
+  .link-button {
+    background: none;
+    border: none;
+    color: #3137b5;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .link-button:hover {
+    color: #3137b5;
+  }
+  
+  .link-button:active {
+    color: #3137b5; /* No change, same color on active */
+  }
+  
